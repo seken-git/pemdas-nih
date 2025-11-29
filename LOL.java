@@ -529,7 +529,7 @@ public class LOL {
                             i++;
                         }
 
-                        int nomorUrut = pelangganAktif.historyCount + 1; // Selalu mulai dari 1
+                        int nomorUrut = pelangganAktif.historyCount + 1;
 
                         pelangganAktif.balance -= totalTagihan;
 
@@ -542,12 +542,12 @@ public class LOL {
 
                         pelangganAktif.orderCount = 0;
                         pelangganAktif.isCheckout = false;
-                        System.out.print("FOOD IS DELIVERED TO " + nama + ". BALANCE = " + pelangganAktif.balance);
+                        cetak("FOOD IS DELIVERED TO " + nama + ". BALANCE = " + pelangganAktif.balance);
                     } else {
-                        System.out.print("ORDER IS NOT CHECKED OUT");
+                        cetak("ORDER IS NOT CHECKED OUT");
                     }
                 } else {
-                    System.out.print("MAKE AN ORDER FIRST");
+                    cetak("MAKE AN ORDER FIRST");
                 }
             }
         }
